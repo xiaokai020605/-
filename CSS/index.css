@@ -1,0 +1,143 @@
+/* 通用样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1b1a1e;
+}
+
+/* 基本样式 */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    width: 1400px;
+}
+
+/* 导航栏样式 */
+header {
+    
+    margin: 0 auto;;
+    height: 80px;
+    /* 固定高度 */
+    display: flex;
+    /* 使用 Flexbox 布局 */
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: space-between;
+    /* 水平居中 */
+    background-color:#1b1a1e;
+    /* 背景颜色 */
+
+    padding: 0 150PX;
+    box-shadow: 5px 5px 10px rgb(0.0.0.0);
+}
+
+/* Logo 样式 */
+header .logo img {
+    height: 65px;
+    /* 固定图片高度 */
+    width: auto;
+    /* 按比例调整宽度 */
+    margin:0;
+    /* 和导航链接间隔 */
+}
+
+/* 导航链接样式 */
+header .nav-links {
+    list-style-type: none;
+    /* 去掉列表默认样式 */
+    display: flex;
+    /* Flexbox 布局 */
+    gap: 100px;
+    /* 每个链接之间的间距 */
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    /* 去掉下划线 */
+    font-size: 1rem;
+    /* 字体大小 */
+    color: #f3f1f1;
+    /* 文字颜色 */
+    transition: color 0.3s border-bottom 0.3s ease;
+    /* 添加悬停效果 */
+    line-height: 80px;
+    /* 垂直方向居中，与导航栏高度一致 */
+    padding: 5px 0;
+}
+/* 鼠标悬停效果 */
+.nav-links a:hover {
+    color: #baa8a878;
+    /* 悬停时改变颜色 */
+}
+.nav-links a:not(.active)
+{
+    border-bottom: none;
+}
+
+/* 当前活动页的下划线 */
+.nav-links a.active {
+    border-bottom: 3px solid #a11803e8;
+    /* 定义下划线颜色和宽度 */
+}
+
+/* 悬停时可以为其他链接加临时下划线 */
+.nav-links a:hover:not(.active) {
+    border-bottom: 2px solid #9b7d7d;
+}
+
+.search-item{
+    position: relative;
+}
+
+.search-item #search-box{
+    /* 默认隐藏 */
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    /* 修正居中偏移 */
+    width: 0;
+    /* 初始宽度 */
+    padding: 5px;
+    font-size: 1rem;
+    border: 0.5px solid #464343;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+
+.search-item:hover #search-box
+{
+    display: block;
+    width: 200px;
+}
+
+header .login a{
+    text-decoration: none;
+    color: #f3f1f1;
+    transition: color 0.3s ease;
+}
+header .login a:hover {
+    color: #baa8a878;
+}
+
+/* 侧边栏样式 */
+bsider
+{
+    width: 85%;
+    height: 95%;
+    border: 1px solid #fff;
+    display: flex;
+}
+bsider .menu_side, .song_side
+{
+    position: relative;
+    width: 25%;
+    height: 90%;
+    border: 1px solid #fff;
+}
