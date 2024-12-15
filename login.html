@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Login</title>
+    <link rel="stylesheet" href="./CSS/loginStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    
+</head>
+<body>
+    <div class="music-player">
+        <audio id="audio-player" src="./audio/login.mp3"></audio>
+        <button id="play-pause-btn">
+            <i class="bi bi-play-fill"></i>
+        </button>
+        <img src="./image/login1.png" alt="">
+    </div>
+
+    <div class="box">
+        <h2>Login</h2>
+            <form action="./index.html">
+                <label for="">账号</label>
+                <div class="input-group">
+                    <i class="bi bi-person-circle"></i>
+                    <input type="text" id="username"  required>
+                </div>
+                <label for="">密码</label>
+                <div class="input-group">
+                    <i class="bi bi-lock-fill"></i>
+                    <input type="password" id="username"  required>
+                </div>
+                <div class="btn">
+                    <a href="#" class="forgot-password">忘记密码？</a>
+                    <div class="butts">
+                        <button type="submit">登录</button>
+                        <button type="submit">注册</button>
+                    </div>
+                    
+                </div>
+            </form>
+    </div>
+    <script src="./JS/loginPlay.js"></script>
+    
+</body>
+</html>
