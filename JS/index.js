@@ -299,6 +299,7 @@ back.addEventListener('click', () => {
 
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
+    wave.classList.add('active2'); // 播放器动画条启动
 
     makeAllBackgrounds();
     Array.from(document.getElementsByClassName('songItem'))[`${index - 1}`].style.background = "rgb(105,105,170,0.1)"; // 设置当前播放的背景
@@ -326,6 +327,7 @@ next.addEventListener('click', () => {
 
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
+    wave.classList.add('active2'); // 播放器动画条启动
 
     makeAllBackgrounds();
     Array.from(document.getElementsByClassName('songItem'))[`${index - 1}`].style.background = "rgb(105,105,170,0.1)"; // 设置当前播放的背景
