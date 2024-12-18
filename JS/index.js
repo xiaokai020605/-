@@ -1,5 +1,16 @@
 const music = new Audio('./audio/1.mp3');
 
+
+//跳转实现
+let LIBRARY = document.getElementsByClassName('LIBRARY')[0];
+LIBRARY.addEventListener('click', () => {
+    window.location.href = './My_library.html';
+})
+let RADIO = document.getElementsByClassName('RADIO')[0];
+RADIO.addEventListener('click', () => {
+    window.location.href = './Radio.html';
+})
+
 //创建数组
 
 const songs = [

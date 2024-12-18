@@ -1,8 +1,18 @@
 const music = new Audio('./audio/1.mp3');
 
+//实现跳转
+let discovera = document.getElementsByClassName('Discovera')[0];
+discovera.addEventListener('click', () => {
+    window.location.href = './index.html';
+})
+
+let RADIO = document.getElementsByClassName('RADIO')[0];
+RADIO.addEventListener('click', () => {
+    window.location.href = './Radio.html';
+})
+
+
 //创建数组
-
-
 const songs = [
     {
         id: '1',
