@@ -1,6 +1,4 @@
 const music = new Audio('./audio/1.mp3');
-// 这是外链的 JavaScript 文件
-// console.log("外链 JavaScript 成功运行！");
 
 //创建数组
 

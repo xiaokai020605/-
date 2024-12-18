@@ -503,3 +503,291 @@ header .song_side nav .user img {
     box-shadow: 2px 2px 8px #131312;
 }
 
+/* libraries主要内容 */
+/* 用户部分 */
+header .song_side .lb-container {
+    /* border: 1px solid #fff; */
+    margin: 15px;
+    height: 87%;
+}
+header .song_side .lb-container .user_contain {
+    margin: 5px;
+    height: 150px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+header .song_side .lb-container .user_contain img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 5px 15px 0px 5px;
+    cursor: pointer;
+}
+header .song_side .lb-container .user_contain .per_text {
+    display: block;
+}
+header .song_side .lb-container .user_contain .per_text h2{
+    font-size: 30px;
+}
+header .song_side .lb-container .user_contain .per_text p{
+    font-size: 15px;
+    color: rgb(184, 184, 184, .5);
+}
+header .song_side .lb-container .user_contain .per_text p .fans{
+    transition: .2s linear;
+    cursor: pointer;
+    
+}
+header .song_side .lb-container .user_contain .per_text p .fans:hover{
+    color:rgba(255, 255, 255, .8);
+}
+
+/* 我的主要内容 */
+header .song_side .lb-container .My  {
+    height: 68%;
+    /* border: 1px solid #fff; */
+    margin: 0px;
+    display: flex;
+}
+header .song_side .lb-container .My .Mysongs {
+    width: 33%;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    margin: 5px 2.5px 1px 5px;
+}
+header .song_side .lb-container .My .Mysinger {
+    width: 33%;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    margin: 5px 2.5px 1px 2.5px;
+}
+header .song_side .lb-container .My .song_rank {
+    width: 33%;
+    /* border: 1px solid #fff; */
+    margin: 5px 5px 1px 2.5px;
+}
+header .song_side .lb-container .My .Mysongs .h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* font-size: 20px; */
+}
+header .song_side .lb-container .My .Mysongs .h4 .btn_s{
+    margin-right: 10px;
+}
+header .song_side .lb-container .My .Mysongs .h4 .bi{
+    color: #a4a8b4;
+    cursor: pointer;
+    transition: .3s linear;
+}
+header .song_side .lb-container .My .Mysongs .h4 .bi:hover{
+    color: #fff;
+}
+header .song_side .lb-container .My .Mysongs .songs{
+    width: 100%;
+    /* border: 1px solid #fff; */
+    height: 290px;
+    margin-top: 10px;
+    /* display: block; */
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+header .song_side .lb-container .My .Mysongs .songs::-webkit-scrollbar{
+    display: none;
+}
+header .song_side .lb-container .My .Mysongs .songs li {
+    position: relative;
+    list-style-type: none;
+    /* border: 1px solid #fff; */
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .3s linear;
+    
+}
+header .song_side .lb-container .My .Mysongs .songs li:hover{
+    background: rgb(105, 105, 170, .1);
+}
+header .song_side .lb-container .My .Mysongs .songs li span{
+    font-size: 15px;
+    font-weight: 600;
+    color: #4c5262;
+}
+header .song_side .lb-container .My .Mysongs .songs li img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+header .song_side .lb-container .My .Mysongs .songs li h5{
+    font-size: 15px;
+    margin-left: 15px;
+}
+header .song_side .lb-container .My .Mysongs .songs li h5 .subtitle{
+    font-size: 12px;
+    color: #4c5262;
+}
+header .song_side .lb-container .My .Mysongs .songs li .bi{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 16px;
+}
+
+/* 喜欢的歌手 */
+header .song_side .lb-container .My .Mysinger .h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* font-size: 20px; */
+}
+header .song_side .lb-container .My .Mysinger .h4 .btn_s {
+    margin-right: 10px;
+}
+
+header .song_side .lb-container .My .Mysinger .h4 .bi {
+    color: #a4a8b4;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header .song_side .lb-container .My .Mysinger .h4 .bi:hover {
+    color: #fff;
+}
+header .song_side .lb-container .My .Mysinger .singers {
+    width: 100%;
+    /* border: 1px solid #fff; */
+    height: 290px;
+    margin-top: 10px;
+    /* display: block; */
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+header .song_side .lb-container .My .Mysinger .singers::-webkit-scrollbar {
+    display: none;
+}
+
+header .song_side .lb-container .My .Mysinger .singers li {
+    position: relative;
+    list-style-type: none;
+    /* border: 1px solid #fff; */
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .3s linear;
+
+}
+
+header .song_side .lb-container .My .Mysinger .singers li:hover {
+    background: rgb(105, 105, 170, .1);
+}
+
+header .song_side .lb-container .My .Mysinger .singers li span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4c5262;
+}
+
+header .song_side .lb-container .My .Mysinger .singers li img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+header .song_side .lb-container .My .Mysinger .singers li h5 {
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+/* 听歌排行榜 */
+header .song_side .lb-container .My .song_rank .h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* font-size: 20px; */
+}
+
+header .song_side .lb-container .My .song_rank .h4 .bi {
+    color: #a4a8b4;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header .song_side .lb-container .My .song_rank .h4 .bi:hover {
+    color: #fff;
+}
+
+header .song_side .lb-container .My .song_rank .rank {
+    width: 100%;
+    /* border: 1px solid #fff; */
+    height: 290px;
+    margin-top: 10px;
+    /* display: block; */
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+header .song_side .lb-container .My .song_rank .rank::-webkit-scrollbar {
+    display: none;
+}
+
+header .song_side .lb-container .My .song_rank .rank li {
+    position: relative;
+    list-style-type: none;
+    /* border: 1px solid #fff; */
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .3s linear;
+    /* justify-content: space-between; */
+}
+
+header .song_side .lb-container .My .song_rank .rank li:hover {
+    background: rgb(105, 105, 170, .1);
+}
+
+header .song_side .lb-container .My .song_rank .rank li span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4c5262;
+}
+
+header .song_side .lb-container .My .song_rank .rank li .img_play{
+    position: relative;
+}
+header .song_side .lb-container .My .song_rank .rank li  .img_play img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+header .song_side .lb-container .My .song_rank .rank li  .img_play .bi {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 16px;
+    opacity: 0;
+}
+header .song_side .lb-container .My .song_rank .rank li  .img_play .bi:hover {
+    opacity: 1;
+}
+
+header .song_side .lb-container .My .song_rank .rank li h5 {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+header .song_side .lb-container .My .song_rank .rank li h5 .subtitle {
+    font-size: 12px;
+    color: #4c5262;
+}
+header .song_side .lb-container .My .song_rank .rank li p{
+    position: absolute;
+    left: 250px;
+    font-size: 13px;
+}
+
