@@ -582,7 +582,7 @@ header .song_side .lb-container .My .Mysongs .h4 .bi{
 header .song_side .lb-container .My .Mysongs .h4 .bi:hover{
     color: #fff;
 }
-header .song_side .lb-container .My .Mysongs .songs{
+header .song_side .lb-container .My .Mysongs .songses{
     width: 100%;
     /* border: 1px solid #fff; */
     height: 290px;
@@ -591,10 +591,10 @@ header .song_side .lb-container .My .Mysongs .songs{
     overflow-y: auto;
     scroll-behavior: smooth;
 }
-header .song_side .lb-container .My .Mysongs .songs::-webkit-scrollbar{
+header .song_side .lb-container .My .Mysongs .songses::-webkit-scrollbar{
     display: none;
 }
-header .song_side .lb-container .My .Mysongs .songs li {
+header .song_side .lb-container .My .Mysongs .songses li {
     position: relative;
     list-style-type: none;
     /* border: 1px solid #fff; */
@@ -606,28 +606,28 @@ header .song_side .lb-container .My .Mysongs .songs li {
     transition: .3s linear;
     
 }
-header .song_side .lb-container .My .Mysongs .songs li:hover{
+header .song_side .lb-container .My .Mysongs .songses li:hover{
     background: rgb(105, 105, 170, .1);
 }
-header .song_side .lb-container .My .Mysongs .songs li span{
+header .song_side .lb-container .My .Mysongs .songses li span{
     font-size: 15px;
     font-weight: 600;
     color: #4c5262;
 }
-header .song_side .lb-container .My .Mysongs .songs li img{
+header .song_side .lb-container .My .Mysongs .songses li img{
     width: 50px;
     height: 50px;
     margin-left: 20px;
 }
-header .song_side .lb-container .My .Mysongs .songs li h5{
+header .song_side .lb-container .My .Mysongs .songses li h5{
     font-size: 15px;
     margin-left: 15px;
 }
-header .song_side .lb-container .My .Mysongs .songs li h5 .subtitle{
+header .song_side .lb-container .My .Mysongs .songses li h5 .subtitle{
     font-size: 12px;
     color: #4c5262;
 }
-header .song_side .lb-container .My .Mysongs .songs li .bi{
+header .song_side .lb-container .My .Mysongs .songses li .bi{
     position: absolute;
     right: 15px;
     top: 15px;

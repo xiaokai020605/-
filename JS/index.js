@@ -120,6 +120,7 @@ const songs = [
     
 ]
 
+
 // 改变图片顺序内容
 Array.from(document.getElementsByClassName('songItem')).forEach((element, i) => {
     element.getElementsByTagName('img')[0].src = songs[i].poster 
