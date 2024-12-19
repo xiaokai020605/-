@@ -84,8 +84,8 @@
         <div class="song_side">
             <nav>
                 <ul>
-                    <li>Discovera </li>
-                    <li>MY LIBRARY</li>
+                    <li class="Discovera">Discovera </li>
+                    <li class="LIBRARY">MY LIBRARY</li>
                     <li>RADIO<span></span></li>
                 </ul>
                 <div class="search">
@@ -93,25 +93,269 @@
                     <input type="text" placeholder="Search Music...">
                 </div>
                 <div class="user">
-                    <img src="./image/user.jpg" alt="User" title="KDS CODER( kai)">
+                    <img src="./image/user.jpg" alt="User" title="KDS CODER(kai)">
                 </div>
             </nav>
-            <div class="radio-container">
-                <!-- 当前播放信息区域 -->
-                <div class="now-playing">
-                    
-                </div>
+
+            <!-- 电台内容 -->
+            <div class="radio_container">
+                <div class="icons">
+                    <!-- 左侧箭头 -->
+                    <div class="moves" id="left_move">
+                        <i class="bi bi-chevron-compact-left"></i>
+                    </div>
             
-                <!-- 播放控制按钮 -->
-                <div class="control-buttons">
-                    
+                    <!-- 中间图标 -->
+                    <div class="radio_icon">
+                        <li class="iconItem">
+                            <i class="bi bi-chat-left-text"></i>
+                            <h5>情感</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-music-note"></i>
+                            <h5>音乐</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-star"></i>
+                            <h5>收藏</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        <li class="iconItem">
+                            <i class="bi bi-play-circle"></i>
+                            <h5>播放</h5>
+                        </li>
+                        
+                    </div>
+                    <!-- 右侧箭头 -->
+                    <div class="moves" id="right_move">
+                        <i class="bi bi-chevron-compact-right"></i>
+                    </div>
                 </div>
-            
-                <!-- 电台列表 -->
-                <div class="radio-list">
-                    
+                <div class="Recommend">
+                    <div class="h2">
+                        <h2>Recommendtion</h2>
+                        <div class="btn_s">
+                            <i class="bi bi-arrow-up" id="up_scroll"></i>
+                            <i class="bi bi-arrow-down" id="down_scroll"></i>
+                        </div>
+                    </div>
+                    <div class="recom">
+                        <li class="recomItem">
+                            <div class="Th3">
+                                <h3>音乐播客 · 电台</h3>
+                                <span>更多></span>
+                            </div>
+                            <hr>
+                            <div class="contents">
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_1.png" alt="">
+                                    <div class="text-container">
+                                        <h4>大时代症候群</h4>
+                                        <span>和五条人一起，开启美好精神状态</span>
+                                    </div>
+                                </div>
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_2.png" alt="">
+                                    <div class="text-container">
+                                        <h4>日本流行音乐收听指南</h4>
+                                        <span>在Jpop金曲里，探究日本独特流行文化</span>
+                                    </div>
+                                </div>
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_3.png" alt="">
+                                    <div class="text-container">
+                                        <h4>皮皮真的水</h4>
+                                        <span>具象波的个人播客，让音乐回到生活</span>
+                                    </div>
+                                </div>
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_4.png" alt="">
+                                    <div class="text-container">
+                                        <h4>速溶音室·1 首歌 1 个故事</h4>
+                                        <span>泛滥音乐想象，速溶单曲故事。</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="recomItem">
+                            <div class="Th3">
+                                <h3>生活 · 电台</h3>
+                                <span>更多></span>
+                            </div>
+                            <hr>
+                            <div class="contents">
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_5.png" alt="">
+                                    <div class="text-container">
+                                        <h4>徐徐的</h4>
+                                        <span>NHK制作人带你一起领略日本生活方式</span>
+                                    </div>
+                                </div>
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_6.png" alt="">
+                                    <div class="text-container">
+                                        <h4>河童打扰了！</h4>
+                                        <span>一档超有趣的日本生活方式播客</span>
+                                    </div>
+                                </div>
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_7.png" alt="">
+                                    <div class="text-container">
+                                        <h4>世界好好吃</h4>
+                                        <span>世界各地的都市丽人都爱吃</span>
+                                    </div>
+                                </div>
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_8.png" alt="">
+                                    <div class="text-container">
+                                        <h4>轻松频率丨放松助眠丨治愈纯音</h4>
+                                        <span>来源生活的自然之音，用于催眠 学习 放松 缓解焦虑。</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="recomItem">
+                            <div class="Th3">
+                                <h3>情感 · 电台</h3>
+                                <span>更多></span>
+                            </div>
+                            <hr>
+                            <div class="contents">
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_9.png" alt="">
+                                    <div class="text-container">
+                                        <h4>非典型sisters| 大厂不卷指南</h4>
+                                        <span>超酷的姐姐和她的朋友关于职场，自我成长的探索</span>
+                                    </div>
+                                </div>
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_10.png" alt="">
+                                    <div class="text-container">
+                                        <h4>爱的表达式</h4>
+                                        <span>和你一起面对情感、成长等人生每一个命题</span>
+                                    </div>
+                                </div>
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_11.png" alt="">
+                                    <div class="text-container">
+                                        <h4>过期少女研学社|年轻女孩女性主义电子读物</h4>
+                                        <span>年轻女孩的女性主义读物</span>
+                                    </div>
+                                </div>
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_12.png" alt="">
+                                    <div class="text-container">
+                                        <h4>三文鱼</h4>
+                                        <span>《宇宙乘客》全新出发，在每次分享中感受自由</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="recomItem">
+                            <div class="Th3">
+                                <h3>创作翻唱 · 电台</h3>
+                                <span>更多></span>
+                            </div>
+                            <hr>
+                            <div class="contents">
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_13.png" alt="">
+                                    <div class="text-container">
+                                        <h4>沉浸式流金电台丨治愈时刻</h4>
+                                        <span>沉浸式氛围空间</span>
+                                    </div>
+                                </div>
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_14.png" alt="">
+                                    <div class="text-container">
+                                        <h4>爱抽烟屁的彦祖</h4>
+                                        <span>让小哥哥的迷人低音炮治愈你</span>
+                                    </div>
+                                </div>
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_15.png" alt="">
+                                    <div class="text-container">
+                                        <h4>顔人中的隔壁小窝</h4>
+                                        <span>住在你家隔壁，吵闹的唱歌男孩</span>
+                                    </div>
+                                </div>
+                                <div class="imgandtxt">
+                                    <img src="./image/rad_16.png" alt="">
+                                    <div class="text-container">
+                                        <h4>王巨星的电台</h4>
+                                        <span>你一定会爱上的惊艳男声翻唱</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                        
                 </div>
             </div>
+
             
         </div>
 
@@ -147,7 +391,7 @@
             </div>
         </div>
     </header>
-    <script src="./JS/index.js"></script>
+    <script src="./JS/Radio.js"></script>
 </body>
 
 </html>

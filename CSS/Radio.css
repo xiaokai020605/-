@@ -364,7 +364,7 @@ header .master_play .vol input {
 header .master_play .vol .vol_bar {
     position: absolute;
     background: #36e2ec;
-    width: 0%;
+    width: 100%;
     height: 100%;
     top: 0;
     transition: 1s linear;
@@ -376,7 +376,7 @@ header .master_play .vol .dot {
     height: 5px;
     background: #36e2ec;
     border-radius: 50%;
-    left: 10%;
+    left: 100%;
     top: -1px;
     transition: 1s linear;
 }
@@ -504,3 +504,218 @@ header .song_side nav .user img {
 }
 
 /* 主要板块 */
+header .song_side .radio_container{
+    /* border: 1px solid #fff; */
+    height: 515px;
+    margin: 10px;
+}
+header .song_side .radio_container .icons {
+    display: flex;
+    /* 使用 Flex 布局 */
+    justify-content: space-between;
+    /* 子元素在主轴方向均匀分布 */
+    align-items: center;
+    /* 垂直居中 */
+    /* border: 1px solid #fff; */
+    height: 180px;
+    padding: 0 20px;
+    /* 增加内边距 */
+    position: relative;
+    /* 为 radio_icon 居中提供基础 */
+}
+
+header .song_side .radio_container .icons .moves {
+    position: absolute;
+    /* 绝对定位 */
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+}
+
+header .song_side .radio_container .icons .moves#left_move {
+    left: 0px;
+    /* 靠左侧对齐 */
+}
+
+header .song_side .radio_container .icons .moves#right_move {
+    right: 0px;
+    /* 靠右侧对齐 */
+}
+header .song_side .radio_container .icons .moves .bi{
+    color: #a4a8b4;
+    cursor: pointer;
+    transition: .3s linear;
+    font-size: 30px;
+}
+header .song_side .radio_container .icons .moves .bi:hover{
+    color: #fff;
+}
+header .song_side .radio_container .icons .radio_icon {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    /* 强制 3 列 */
+    grid-template-rows: repeat(2, auto);
+    /* 强制 2 行 */
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+header .song_side .radio_container .icons .radio_icon::-webkit-scrollbar {
+    display: none;
+}
+
+header .song_side .radio_container .icons .radio_icon li {
+    list-style: none;
+    /* 移除默认列表样式 */
+    text-align: center;
+    /* 居中文本 */
+    display: flex;
+    /* 使图标和文字可以灵活排列 */
+    flex-direction: column;
+    /* 图标在上，文字在下 */
+    align-items: center;
+    gap: 5px;
+    /* 图标与文字的间距 */
+    width: 60px;
+    height: 60px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+header .song_side .radio_container .icons .radio_icon li:hover{
+    background: rgb(184, 184, 184, .1);
+}
+header .song_side .radio_container .icons .radio_icon li .bi{
+    font-size: 18px;
+    color: rgba(255, 255, 250, 0.8);
+}
+header .song_side .radio_container .icons .radio_icon li h5{
+    font-size: 15px;
+    color: #a4a8b4;
+}
+
+/* 推荐页面 */
+header .song_side .radio_container .Recommend {
+   /* border: 1px solid #fff; */
+   height: 323px;
+   margin: 5px;
+}
+header .song_side .radio_container .Recommend .h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* font-size: 20px; */
+}
+
+header .song_side .radio_container .Recommend .h2 .btn_s {
+    margin-right: 10px;
+}
+
+header .song_side .radio_container .Recommend .h2 .bi {
+    color: #a4a8b4;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header .song_side .radio_container .Recommend .h2 .bi:hover {
+    color: #fff;
+}
+header .song_side .radio_container .Recommend .recom {
+    margin-top: 1px;
+    display: block;
+    height: 275px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+header .song_side .radio_container .Recommend .recom::-webkit-scrollbar{
+    display: none;
+}
+header .song_side .radio_container .Recommend .recom li{
+    margin-top: 2px;
+    margin-bottom: 30px;
+   list-style-type: none;
+}
+header .song_side .radio_container .Recommend .recom li .Th3{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+header .song_side .radio_container .Recommend .recom li .Th3 h3{
+   font-size: 18px;
+   color: #fff;
+}
+header .song_side .radio_container .Recommend .recom li .Th3 span{
+   color: #a4a8b4;
+   padding-right: 10px;
+   transition: .3s linear;
+   cursor: pointer;
+}
+header .song_side .radio_container .Recommend .recom li .Th3 span:hover{
+   color: #fff;
+}
+header .song_side .radio_container .Recommend .recom li hr{
+    border: 0;
+    border-top: 2px solid #4c5262;
+    /* 设置上边框的颜色和粗细 */
+    margin: 10px 0;
+    /* 调整上下间距 */
+}
+/* 设置 contents 为 grid 布局，包含两列 */
+header .song_side .radio_container .Recommend .recom li .contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2列布局 */
+    grid-template-rows: repeat(2, auto);
+    /* 2行布局 */
+    gap: 20px;
+    /* 设置每个项之间的间距 */
+}
+
+/* 设置 imgandtxt 的基本布局 */
+header .song_side .radio_container .Recommend .recom li .contents .imgandtxt {
+    display: flex;
+    align-items: center;
+    transition: .2s linear;
+    cursor: pointer;
+}
+header .song_side .radio_container .Recommend .recom li .contents .imgandtxt:hover{
+    background: rgb(184, 184, 184, .1);
+}
+
+/* 设置图片样式 */
+header .song_side .radio_container .Recommend .recom li .contents .imgandtxt img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+    /* 图片和文字之间的间距 */
+}
+
+/* 设置文字区域为 flex 列布局 */
+header .song_side .radio_container .Recommend .recom li .contents .imgandtxt .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .song_side .radio_container .Recommend .recom li .contents .imgandtxt .text-container h4 {
+    font-size: 16px;
+    margin: 0;
+    color: #fff;
+}
+
+/* span 样式 */
+header .song_side .radio_container .Recommend .recom li .contents .imgandtxt .text-container span {
+    font-size: 12px;
+    margin: 0;
+    color: #a4a8b4;
+    position: relative;
+    /* 为线条设置定位 */
+    padding-top: 10px;
+    /* 给顶部添加空间 */
+}
+
+
