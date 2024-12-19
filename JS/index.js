@@ -11,6 +11,33 @@ RADIO.addEventListener('click', () => {
     window.location.href = './Radio.html';
 })
 
+window.onload = function () {
+    // 检查用户是否已登录
+    if (localStorage.getItem('isLoggedIn') === 'true') {
+        // 如果已登录，显示头像并隐藏登录按钮
+        document.getElementById('user-avatar').style.display = 'block';
+        document.getElementById('login-btn').style.display = 'none';
+    } else {
+        // 如果未登录，显示登录按钮并隐藏头像
+        document.getElementById('user-avatar').style.display = 'none';
+        document.getElementById('login-btn').style.display = 'block';
+    }
+
+    // 登录按钮点击事件
+    document.getElementById('login-btn').onclick = function () {
+        // 模拟登录过程，跳转到登录页面
+        window.location.href = 'login.html'; // 假设登录页面是login.html
+    };
+};
+
+// 头像点击事件 - 退出登录
+    document.getElementById('user-avatar').onclick = function () {
+        // 清除本地存储中的登录状态
+        localStorage.removeItem('isLoggedIn');
+        // 跳转回登录页面
+        window.location.href = 'login.html'; // 假设登录页面是login.html
+    };
+
 //创建数组
 
 const songs = [

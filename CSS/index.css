@@ -447,6 +447,20 @@ header .song_side nav .user img {
     border-radius: 50%;
     box-shadow: 2px 2px 8px #131312;
 }
+header .song_side nav .user #login-btn{
+    background:none;
+    width: 50px;
+    height: 30px;
+    border: 2px solid #36e2ec;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
+}
+header .song_side nav .user #login-btn:hover{
+    background:#5adae0;
+}
 
 /* 主要内容 */
 header .song_side .content{
