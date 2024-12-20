@@ -31,12 +31,12 @@ window.onload = function () {
 };
 
 // 头像点击事件 - 退出登录
-    document.getElementById('user-avatar').onclick = function () {
-        // 清除本地存储中的登录状态
-        localStorage.removeItem('isLoggedIn');
-        // 跳转回登录页面
-        window.location.href = 'login.html'; // 假设登录页面是login.html
-    };
+document.getElementById('user-avatar').onclick = function () {
+    // 清除本地存储中的登录状态
+    localStorage.removeItem('isLoggedIn');
+    // 跳转回登录页面
+    window.location.href = 'login.html'; // 假设登录页面是login.html
+};
 
 //创建数组
 

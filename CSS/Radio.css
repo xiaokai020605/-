@@ -555,9 +555,7 @@ header .song_side .radio_container .icons .moves .bi:hover{
 header .song_side .radio_container .icons .radio_icon {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    /* 强制 3 列 */
     grid-template-rows: repeat(2, auto);
-    /* 强制 2 行 */
     gap: 40px;
     justify-items: center;
     align-items: center;
@@ -571,16 +569,11 @@ header .song_side .radio_container .icons .radio_icon::-webkit-scrollbar {
 
 header .song_side .radio_container .icons .radio_icon li {
     list-style: none;
-    /* 移除默认列表样式 */
     text-align: center;
-    /* 居中文本 */
     display: flex;
-    /* 使图标和文字可以灵活排列 */
     flex-direction: column;
-    /* 图标在上，文字在下 */
     align-items: center;
     gap: 5px;
-    /* 图标与文字的间距 */
     width: 60px;
     height: 60px;
     transition: .3s linear;
